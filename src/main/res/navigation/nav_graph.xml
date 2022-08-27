@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/kidsFragment">
+
+    <fragment
+        android:id="@+id/kidsFragment"
+        android:name="kids.example.kids.Fragment.KidsFragment"
+        tools:layout="@layout/fragment_kids">
+        <action
+            android:id="@+id/action_kidsFragment_to_kidsDetailsFragment"
+            app:destination="@id/kidsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kidsDetailsFragment"
+        android:name="kids.example.kids.Fragment.KidsDetailsFragment"
+        android:label="fragment_kids_details2"
+        tools:layout="@layout/fragment_kids_details" />
+</navigation>
